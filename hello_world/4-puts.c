@@ -1,2 +1,8 @@
-#!/bin/bash
-gcc puts(with proper grammar, but the outcome is a piece of art,);
+#include <stdio.h>
+
+int main(void)
+{
+    char sentence[] = "Programming is like building a multilingual puzzle";
+    puts(sentence);
+    return (0);
+}
