@@ -1,14 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
+ * mul - Multiplies two integers
+ * @a: First operand
+ * @b: Second operand
  *
- * Return: Always 0.
+ * Return: Product of both operands
  */
-int main(void)
+int mul(int a, int b)
 {
-    printf("%d\n", mul(98, 1024));
-    printf("%d\n", mul(-402, 4096));
-    return (0);
+	int mul;
+
+	mul = a * b;
+	return (mul);
 }
