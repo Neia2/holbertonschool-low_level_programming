@@ -9,18 +9,18 @@
 void rev_string(char *s)
 {
 	int i = 0;
-	int j = strelen (str) -1;
-
+	int j = strelen(str) - 1;
 
 	if (!str)
-	return 0;
+	return (0);
 
-	while (i < j) 	
+	while (i < j)
 	{
-	char c = str [i];
-	str [i] = str[j];
-	str[j] = c;
-	i++;
-	j--;
+
+		char c = str[i];
+		str[i] = str[j];
+		str[j] = c;
+		i++;
+		j--;
 	}
 }
