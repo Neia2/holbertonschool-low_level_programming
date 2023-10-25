@@ -9,17 +9,18 @@
 void rev_string(char *s)
 {
 	int i = 0;
-	int j = strelen(str) - 1;
+	int j = _strlen(s) - 1;
+	char c;
 
-	if (!str)
-	return (0);
+	if (!s)
+		return;
 
 	while (i < j)
 	{
+		c = s[i];
 
-		char c = str[i];
-		str[i] = str[j];
-		str[j] = c;
+		i = s[j];
+		s[j] = c;
 		i++;
 		j--;
 	}
