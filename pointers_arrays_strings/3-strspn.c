@@ -1,18 +1,27 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _strspn - function that gets the length of a prefix substring
+ * @s: given string
+ * @accept: find bytes
+ * Return: Always a.
  */
-int main(void)
+unsigned int _strspn(char *s, char *accept)
 {
-    char *s = "hello, world";
-    char *f = "oleh";
-    unsigned int n;
+	int a, b;
 
-    n = _strspn(s, f);
-    printf("%u\n", n);
-    return (0);
+	for (a = 0; s[a] != '\0'; a++)
+	{
+		for (b = 0; accept[b] != '\0'; b++)
+		{
+			if (s[a] == accept[b])
+			{
+				break;
+			}
+		}
+		if (accept[b] == '\0')
+			break;
+
+	}
+	return (a);
 }
