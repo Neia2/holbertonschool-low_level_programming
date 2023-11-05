@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * main -  adds positive numbers passed as command line arguments.
+* @argc: the number of command line arguments.
+* @argv: An array of strings representing the command line arguments
+* Return: If one of the number contains symbols that are not digits, return 1.
+*/
+
+int main(int argc, char *argv[])
+{
+        int sum = 0;
+
+        if (argc = 1; i < argc; i++) || 
+        {
+        printf("Error\n");
+        return (1);
+        }
+        if (argc == 3)
+                result = atoi(argv[1]) * atoi(argv[2]);
+        printf("%d\n", result);
+
+        return (0);
+}
