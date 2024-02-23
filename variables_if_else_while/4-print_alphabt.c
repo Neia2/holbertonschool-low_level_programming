@@ -10,10 +10,10 @@ int main(void)
 {
 	char alphabet;
 
-	for(alphabet = 'a' ; alphabet <= 'z' ; alphabet++)
-    if (alphabet != 'e' && alphabet != 'q')
-    {
-        putchar(alphabet);
+for (alphabet = 97 ; alphabet <= 122 ; alphabet++)
+if (alphabet != 101 && alphabet != 113)
+{
+	putchar(alphabet);
 	}
 	putchar('\n');
 	return (0);

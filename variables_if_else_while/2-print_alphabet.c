@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-/*
- * main - Entry point
+/**
+ * main - Entry point print alphabet
  * Return: Always 0
 */
-int main (void)
+int main(void)
 {
 char alphabet;
 
-for(alphabet= 97; alphabet <= 122; alphabet++)
+for (alphabet = 97; alphabet <= 122; alphabet++)
 {
 putchar(alphabet);
 }
