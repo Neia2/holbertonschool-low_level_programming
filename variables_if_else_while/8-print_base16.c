@@ -15,5 +15,6 @@ for(i= '0'; i<= '9'; i++)
 for( j='a'; j <= 'f'; j++)
     putchar(j);
     }
-return (0);
+    putchar('\n');
+return(0);
 }
