@@ -1,20 +1,25 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-*print_line:  Write a function that draws a straight line in the terminal.
+*print_line:  Write a function that  prints a square, followed by a new line.
 *
 *
 */
 void print_square(int size)
 {
-int i;
-for (i = 1; i <= 10; i++)
-_putchar('#');
-_putchar('\n');
-if (i <= size)
+int i, j;
+if (size <= 0)
 {
-_putchar('#');
-_putchar('\n');
-_putchar(' ');
+putchar('\n');
+;
+}
+    for (i = 1; i <= size; i++)
+{
+    for (j = 1; j <= size; j++)
+{
+    _putchar('#');
+}
+    _putchar('\n');
 }
 }
