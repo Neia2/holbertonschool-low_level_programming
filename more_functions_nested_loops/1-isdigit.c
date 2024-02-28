@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
-*_isupper: checks for a digit (0 through 9).
-*@c: the character to be checked.
-* Returns: 1 if c is a digit, otherwise 0.
-*/
+ * _isdigit - Checks if a character is a digit (0 through 9).
+ * @c: The character to be checked.
+ *
+ * Return: 1 if c is a digit, otherwise returns 0.
+ */
 int _isdigit(int c)
 {
 

@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
-*@n: the character to print
+ * print_diagonal - a function that draws a diagonal line on the terminal.
+* @n: the character to print
 *
-*
+* Return: void
 */
 void print_diagonal(int n)
 {
@@ -24,15 +25,3 @@ _putchar('\\');
 _putchar('\n');
 }
 }
-
-
-/**
-* if (n <= 0)
-{
-_putchar('\\');
-n++;
-_putchar('\n');
-} {
-*
-*
-*/

@@ -1,27 +1,30 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * putchar - writes the character c to stdout
-*@c: The character to print
-*Return: On success 1.
-*On error, -1 is returned, and errno is set appropriately
-*/
+ * print_triangle - Write a function that prints a triangle
+ * @size: The size of the triangle
+ *
+ * Return: void
+ */
 void print_triangle(int size)
 {
 int i, j, k;
+
 if (size <= 0)
 {
-putchar('\n');
-return;
+    putchar('\n');
+    return;
 }
 for (i = 1; i <= size; ++i)
 {
-    for (j = 1; j > i; ++j)
+    for (j = 1; j < size - i + 1; ++j)
     {
     _putchar(' ');
     }
     for (k = 0; k < i; ++k)
+    {
     _putchar('#');
+    }
     _putchar('\n');
 }
 }

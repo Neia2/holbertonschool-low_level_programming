@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
-*print_line:  Write a function that draws a straight line in the terminal.
-*
-*
-*/
+ * print_line - Draws a straight line in the terminal.
+ * @n: Number of underscores to print.
+ */
 void print_line(int n)
 {
 while (n > 0)
