@@ -12,7 +12,6 @@ int i, j;
 if (size <= 0)
 {
 putchar('\n');
-;
 }
     for (i = 1; i <= size; i++)
 {
