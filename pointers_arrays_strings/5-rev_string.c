@@ -10,14 +10,14 @@ void rev_string(char *s)
 int lenght = 0;
 int i;
 
-    while (s[lenght] != '\0')
-    {
-    lenght++;
-    }
+	while (s[lenght] != '\0')
+	{
+	lenght++;
+	}
 
-    for (i = lenght - 1; i >= 0; i--)
-    {
-    printf("%c", s[i]);
-    }
-    printf("\n");
+	for (i = lenght - 1; i >= 0; i--)
+	{
+	printf("%c", s[i]);
+	}
+	printf("\n");
 }
