@@ -2,6 +2,16 @@
 #include <stdlib.h>
 #include <string.h>
 
+int _strlen(char *s)
+{
+int length = 0;
+
+while (*s != '\0')
+{length++;
+s++;
+}
+return (length);
+}
 /**
  * _strdup - returns a pointer to a newly allocated space in memory,
  * which contains a copy of the string given as a parameter.
@@ -15,7 +25,7 @@ char *_strdup;
 if (str == NULL)
 return (NULL);
 
-_strdup = (char *)malloc(strlen(str) + 1);
+_strdup = (char *)malloc(_strlen(str) + 1);
 
 if (_strdup == NULL)
 return (NULL);
