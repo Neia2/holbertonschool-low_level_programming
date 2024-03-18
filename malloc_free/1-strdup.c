@@ -56,6 +56,6 @@ _strdup = (char *)malloc(_strlen(str) + 1);
 if (_strdup == NULL)
 return (NULL);
 
-strncpy(_strdup, str, _strlen(str) + 1);
+_strncpy(_strdup, str, _strlen(str) + 1);
 return (_strdup);
 }
