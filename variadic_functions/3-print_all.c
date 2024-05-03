@@ -6,40 +6,41 @@
  */
 void print_all(const char * const format, ...)
 {
-    int i;
-    int j;
-    char *ptr = "";
-    char *ptr2 = ", ";
-    va_list list;
+	int i;
+	int j;
+	char *ptr = "";
+	char *ptr2 = ", ";
 
-    print_t prints[] = {
-        {"c", print_c},
-        {"i", print_i},
-        {"s", print_s},
-        {"f", print_f},
-        {NULL, NULL}
-    };
+	va_list list;
 
-    va_start(list, format);
+			print_t prints[] = {
+			{"c", print_c},
+			{"i", print_i},
+			{"s", print_s},
+			{"f", print_f},
+			{NULL, NULL}
+	};
 
-    i = 0;
-    while (format != NULL && format[i])
-    {
-        j = 0;
-        while (prints[j].c != NULL)
-        {
-            if (*prints[j].c == format[i])
-            {
-                printf("%s", ptr);
-                prints[j].f(list);
-                ptr = ptr2;
-            }
-            j++;
-        }
-        i++;
-    }
-    printf("\n");
-    va_end(list);
+	va_start(list, format);
+
+	i = 0;
+	while (format != NULL && format[i])
+	{
+		j = 0;
+		while (prints[j].c != NULL)
+		{
+			if (*prints[j].c == format[i])
+			{
+				printf("%s", ptr);
+				prints[j].f(list);
+				ptr = ptr2;
+			}
+			j++;
+		}
+		i++;
+	}
+	printf("\n");
+	va_end(list);
 }
 
 /**
@@ -48,7 +49,7 @@ void print_all(const char * const format, ...)
  */
 void print_c(va_list list)
 {
-    printf("%c", va_arg(list, int));
+	printf("%c", va_arg(list, int));
 }
 
 /**
@@ -57,7 +58,7 @@ void print_c(va_list list)
  */
 void print_f(va_list list)
 {
-    printf("%f", va_arg(list, double));
+	printf("%f", va_arg(list, double));
 }
 
 /**
@@ -66,7 +67,7 @@ void print_f(va_list list)
  */
 void print_i(va_list list)
 {
-    printf("%d", va_arg(list, int));
+	printf("%d", va_arg(list, int));
 }
 
 /**
@@ -75,12 +76,14 @@ void print_i(va_list list)
  */
 void print_s(va_list list)
 {
-    char *tmp;
-    tmp = va_arg(list, char *);
-    if (tmp == NULL)
-    {
-        printf("(nil)");
-        return;
-    }
-    printf("%s", tmp);
+	char *tmp;
+
+	tmp = va_arg(list, char *);
+
+	if (tmp == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
+	printf("%s", tmp);
 }

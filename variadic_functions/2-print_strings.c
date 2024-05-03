@@ -14,6 +14,7 @@ const char *s = separator;
 va_start(list, n);
 
 i = 0;
+
 while (i < n)
 {
 tmp = va_arg(list, char *);
